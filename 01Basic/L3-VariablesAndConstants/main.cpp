@@ -19,5 +19,20 @@ int main() {
     std::cout << z << std::endl;
     constexpr int constantexprvariable = addItems(1, 2);
     std::cout << constantexprvariable << std::endl;
+
+    // Enum
+    enum RainbowColors {
+        Violet = 21,
+        Indigo,
+        Blue,
+        Green,
+        Yellow,
+        Orange,
+        Red
+    };
+
+    RainbowColors color = Violet;
+    std::cout << color << std::endl;
+
     return 0;
 }
