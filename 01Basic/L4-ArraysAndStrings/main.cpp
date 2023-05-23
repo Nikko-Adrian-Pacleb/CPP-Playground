@@ -1,11 +1,24 @@
 #include <iostream>
 
 int main() {
+    // ## Array intro
     int myArray[5] = {1, 2, 3, 4, 5};
 
     std::cout << myArray[0] << std::endl;
     std::cout << myArray[1] << std::endl;
     std::cout << myArray[2] << std::endl;
+
+    // ## Declaring and Initializing Static Arrays
+    // ElementType arrayName[constant_number of elements] = {optional initial values};
+
+    // Initializing Array with values
+    int myArray2[5] = {1, 2, 3, 4, 5};
+
+    // Initializes all values to 0
+    int myArray3[5] = {};
+
+    // Partial initialization (rest 0)
+    int myArray4[5] = {1, 2};
 
     return 0;
 }
