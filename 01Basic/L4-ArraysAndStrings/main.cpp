@@ -20,5 +20,10 @@ int main() {
     // Partial initialization (rest 0)
     int myArray4[5] = {1, 2};
 
+    // ## Accessing Data Stored in an Array
+    // arrayName[index]
+    int accessArray[5] = {1, 2, 3, 4, 5};
+    std::cout << accessArray[0] << std::endl;
+
     return 0;
 }
