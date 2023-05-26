@@ -2,6 +2,7 @@
 
 int main() {
     // ## Array intro
+    std::cout << "Array intro" << std::endl;
     int myArray[5] = {1, 2, 3, 4, 5};
 
     std::cout << myArray[0] << std::endl;
@@ -22,11 +23,13 @@ int main() {
 
     // ## Accessing Data Stored in an Array
     // arrayName[index]
+    std::cout << "Accessing Data Stored in an Array" << std::endl;
     int accessArray[5] = {1, 2, 3, 4, 5};
     std::cout << accessArray[0] << std::endl;
 
     // ## Modifying Data Stored in an Array
     // arrayName[index] = newValue;
+    std::cout << "Modifying Data Stored in an Array" << std::endl;
     int modifyArray[5] = {1, 2, 3, 4, 5};
     std::cout << modifyArray[0] << std::endl;
     modifyArray[0] = 10;
