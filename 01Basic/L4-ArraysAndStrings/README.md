@@ -34,3 +34,14 @@ int myArray[5] = {1, 2, 3, 4, 5};
 std::cout << myArray[0]; // Output: 1
 std::cout << = myArray[4]; // Output: 5
 ```
+
+## Modifying Data Stored in an Array
+
+Elements can be modified by accessing the index of the array then assigning the value
+
+```cpp
+int modifyArray[5] = {1, 2, 3, 4, 5};
+std::cout << modifyArray[0] << std::endl;
+modifyArray[0] = 10;
+std::cout << modifyArray[0] << std::endl;
+```

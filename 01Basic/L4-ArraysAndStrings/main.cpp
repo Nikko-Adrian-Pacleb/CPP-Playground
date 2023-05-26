@@ -25,5 +25,12 @@ int main() {
     int accessArray[5] = {1, 2, 3, 4, 5};
     std::cout << accessArray[0] << std::endl;
 
+    // ## Modifying Data Stored in an Array
+    // arrayName[index] = newValue;
+    int modifyArray[5] = {1, 2, 3, 4, 5};
+    std::cout << modifyArray[0] << std::endl;
+    modifyArray[0] = 10;
+    std::cout << modifyArray[0] << std::endl;
+
     return 0;
 }
