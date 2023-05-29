@@ -38,6 +38,10 @@ int main() {
     // # Multidimensional Arrays
     // ## Declaring and Initializing Multidimensional Arrays
     // ElementType arrayName[constant_number of rows][constant_number of columns] = {optional initial values};
+    // ## Accessing Data Stored in a Multidimensional Array
+    // arrayName[rowIndex][columnIndex]
+    // ## Modifying Data Stored in a Multidimensional Array
+    // arrayName[rowIndex][columnIndex] = newValue;
     std::cout << "Multidimensional Arrays" << std::endl;
     int multiArray[2][3] = {{1, 2, 3}, {4, 5, 6}};
     std::cout << multiArray[0][0] << std::endl;
@@ -46,6 +50,8 @@ int main() {
     std::cout << multiArray[1][0] << std::endl;
     std::cout << multiArray[1][1] << std::endl;
     std::cout << multiArray[1][2] << std::endl;
+    multiArray[0][0] = 10;
+    std::cout << multiArray[0][0] << std::endl;
 
     return 0;
 }

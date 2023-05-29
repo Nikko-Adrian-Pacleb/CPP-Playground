@@ -45,3 +45,16 @@ std::cout << modifyArray[0] << std::endl;
 modifyArray[0] = 10;
 std::cout << modifyArray[0] << std::endl;
 ```
+
+## Multidimensional Arrays
+
+Declaring and Initializing Multidimensional Arrays
+ElementType arrayName[constant_number of rows][constant_number of columns] = {optional initial values};
+
+## Accessing Data Stored in a Multidimensional Array
+
+arrayName[rowIndex][columnIndex]
+
+## Modifying Data Stored in a Multidimensional Array
+
+arrayName[rowIndex][columnIndex] = newValue;
