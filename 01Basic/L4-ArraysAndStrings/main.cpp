@@ -1,4 +1,5 @@
 #include <iostream>
+#include <vector>
 
 int main() {
     // ## Array intro
@@ -52,6 +53,23 @@ int main() {
     std::cout << multiArray[1][2] << std::endl;
     multiArray[0][0] = 10;
     std::cout << multiArray[0][0] << std::endl;
+
+    // # Dynamic Arays
+    // ## Declaring Dynamic Arrays
+    /**
+     * You can use dynamic arrays in the form of std::vector, which is a standard library container that encapsulates dynamic arrays. 
+     */
+    // ## Initializing Dynamic Arrays
+    // vector<ElementType> arrayName(numberOfElements);
+    std::cout << "Dynamic Arays" << std::endl;
+    std::vector<int> dynamicArray(5);
+    dynamicArray[0] = 1;
+    dynamicArray[1] = 2;
+    dynamicArray[2] = 3;
+    for(int index : dynamicArray) {
+        std::cout << index << std::endl;
+    }
+
 
     return 0;
 }
