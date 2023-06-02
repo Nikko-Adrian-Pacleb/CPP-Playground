@@ -1,7 +1,8 @@
 #include <iostream>
 #include <vector>
 
-int main() {
+int main()
+{
     // ## Array intro
     std::cout << "Array intro" << std::endl;
     int myArray[5] = {1, 2, 3, 4, 5};
@@ -57,7 +58,7 @@ int main() {
     // # Dynamic Arays
     // ## Declaring Dynamic Arrays
     /**
-     * You can use dynamic arrays in the form of std::vector, which is a standard library container that encapsulates dynamic arrays. 
+     * You can use dynamic arrays in the form of std::vector, which is a standard library container that encapsulates dynamic arrays.
      */
     // ## Initializing Dynamic Arrays
     // vector<ElementType> arrayName(numberOfElements);
@@ -66,10 +67,20 @@ int main() {
     dynamicArray[0] = 1;
     dynamicArray[1] = 2;
     dynamicArray[2] = 3;
-    for(int index : dynamicArray) {
+    for (int index : dynamicArray)
+    {
         std::cout << index << std::endl;
     }
 
+    // # Strings
+    std::cout << "Strings" << std::endl;
+    char sayHello[] = {'H', 'e', 'l', 'l', 'o', ' ', 'W', 'o', 'r', 'l', 'd', '\0'};
+    std::cout << sayHello << std::endl;
+    std::cout << "Size of array: " << sizeof(sayHello) << std::endl;
 
+    std::cout << "Replacing space with null" << std::endl;
+    sayHello[5] = '\0';
+    std::cout << sayHello << std::endl;
+    std::cout << "Size of array: " << sizeof(sayHello) << std::endl;
     return 0;
 }
