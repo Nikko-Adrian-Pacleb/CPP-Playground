@@ -1,5 +1,6 @@
 #include <iostream>
 #include <vector>
+#include <string>
 
 int main()
 {
@@ -77,10 +78,44 @@ int main()
     char sayHello[] = {'H', 'e', 'l', 'l', 'o', ' ', 'W', 'o', 'r', 'l', 'd', '\0'};
     std::cout << sayHello << std::endl;
     std::cout << "Size of array: " << sizeof(sayHello) << std::endl;
-
     std::cout << "Replacing space with null" << std::endl;
     sayHello[5] = '\0';
     std::cout << sayHello << std::endl;
     std::cout << "Size of array: " << sizeof(sayHello) << std::endl;
+
+    // !! Dont use this
+    // std::cout << "Enter a word NOT longer than 20 characters:" << std::endl;
+    // char userInput [21];
+    // std::cin >> userInput;
+    // std::cout << "Length of your input was: " << strlen (userInput) << std::endl;
+    // Using array of char limits the input to 20 characters
+
+    // Using Strings
+    std::cout << "Using Strings" << std::endl;
+    std::string myString = "Hello World";
+    std::cout << myString << std::endl;
+    std::cout << "Length of string: " << myString.length() << std::endl;
+    std::cout << "Size of string: " << myString.size() << std::endl;
+    std::cout << "First character: " << myString[0] << std::endl;
+    std::cout << "Last character: " << myString[myString.length() - 1] << std::endl;
+    // entering string
+    std::cout << "Enter a line of text" << std::endl;
+    std::string userInput;
+    getline(std::cin, userInput);
+    std::cout << "You entered: " << userInput << std::endl;
+
+    // Concatenating Strings
+    std::cout << "Concatenating Strings" << std::endl;
+    std::string string1 = "Hello ";
+    std::string string2 = "World";
+    std::string string3 = string1 + string2;
+    std::cout << string3 << std::endl;
+
+    // Copying Strings
+    std::cout << "Copying Strings" << std::endl;
+    std::string string4 = "Hello World";
+    std::string string5 = string4;
+    std::cout << string5 << std::endl;
+
     return 0;
 }
